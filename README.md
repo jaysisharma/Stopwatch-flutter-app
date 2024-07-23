@@ -1,17 +1,19 @@
-# stopwatch
+# Stopwatch Flutter App
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+This Flutter project implements a simple stopwatch functionality, allowing users to start and stop a timer displayed on the screen.
 
-This project is a starting point for a Flutter application.
+## `mounted` Property
 
-A few resources to get you started if this is your first Flutter project:
+In Flutter, the `mounted` property checks if a stateful widget is currently rendered in the widget tree. It returns `true` if the widget is active and visible, otherwise `false`.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Example Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Stopwatch-flutter-app
+```dart
+if (mounted) {
+  // Perform actions only if the widget is still mounted or any function
+  setState(() {
+    // Update state or perform UI-related tasks
+  });
+}
